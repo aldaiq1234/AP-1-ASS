@@ -18,13 +18,13 @@ What does this app do? First, you ask a question in a text field. This question 
 
 ## Usage
 
-1. Запустите приложение командой:
+1. Run the application with the command:
    ```bash
    streamlit run src/app.py
    ```
-2. Перейдите в браузер по адресу `http://localhost:8501`.
-3. Введите вопрос в первое текстовое поле и нажмите Enter, чтобы получить ответ от Ollama.
-4. Используйте второе текстовое поле для поиска по истории запросов. Введите ключевые слова, чтобы найти похожие вопросы.
+2. Go to the browser at `http://localhost:8501`.
+3. Enter the question in the first text field and press Enter to get the answer from Ollama.
+4. Use the second text field to search through the query history. Enter keywords to find similar questions.
 
 ---
 
