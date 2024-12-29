@@ -1,4 +1,4 @@
-Вот готовый `README.md`, соответствующий вашей структуре:
+
 
 ```markdown
 # Ollama Chatbot with ChromaDB Integration
