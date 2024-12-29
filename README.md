@@ -32,6 +32,8 @@ What does this app do? First, you ask a question in a text field. This question 
 
 1. **Request example**:
    - ![image](https://github.com/user-attachments/assets/25802fec-3d2a-4180-a524-a529390f5a90)
+   - ![image](https://github.com/user-attachments/assets/db1f5d8e-de1a-4144-a5f2-a2885b8c5120)
+
 
 ---
 
@@ -39,13 +41,13 @@ What does this app do? First, you ask a question in a text field. This question 
 
 ```
 Project Repository structure:
-  - README.md                # Описание проекта
-  - LICENSE                  # Лицензия
-  - requirements.txt         # Зависимости проекта
-  - src/                     # Исходный код
-      └── app.py             # Основное приложение Streamlit
-  - test/                    # Тесты
-      └── test_app.py        # Тестирование функциональности
+  - README.md                
+  - LICENSE                 
+  - requirements.txt         
+  - src/                    
+      └── app.py             
+  - test/                    
+      └── test_app.py        
 ```
 
 ---
