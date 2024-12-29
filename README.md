@@ -6,8 +6,8 @@
 
 ## Installation
 
-1. Убедитесь, что у вас установлен Python версии 3.8 или выше.
-2. Установите зависимости. Для этого выполните команду:
+1. First we need to install Python version 3.8 and higher.
+2. Download the library specified in the folder requirements.txt
    ```bash
    pip install -r requirements.txt
    ```
