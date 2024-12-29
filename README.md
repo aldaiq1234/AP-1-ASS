@@ -11,7 +11,7 @@
    ```bash
    pip install -r requirements.txt
    ```
-3. Убедитесь, что API Ollama запущен локально на `http://localhost:11434`.
+3. Launching Ollama on `http://localhost:11434 `.
 
 ---
 
