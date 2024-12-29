@@ -54,10 +54,7 @@ Project Repository structure:
 
 ## Notes
 
-- **Хранение истории**: Все вопросы сохраняются в базе данных ChromaDB для дальнейшего поиска.
-- **Поиск**: Для поиска используется генерация векторных представлений текста (embedding). Сейчас используются случайные числа, но в будущем можно заменить на более продвинутую модель.
+- **History Storage**: All questions are saved in the ChromaDB database for further search.
+- **Search**: The generation of vector representations of text (embedding) is used for the search. Random numbers are currently used, but in the future they can be replaced with a more advanced model.
 
-Если у вас возникнут вопросы, не стесняйтесь спрашивать!
-```
 
-Этот файл готов к добавлению в ваш проект. Если нужно что-то уточнить или доработать, напишите!
