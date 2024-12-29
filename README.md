@@ -56,5 +56,7 @@ Project Repository structure:
 
 - **History Storage**: All questions are saved in the ChromaDB database for further search.
 - **Search**: The generation of vector representations of text (embedding) is used for the search. Random numbers are currently used, but in the future they can be replaced with a more advanced model.
+- ![image](https://github.com/user-attachments/assets/c0d9a314-4423-4d95-a57f-58db8c217d9c)
+
 
 
