@@ -30,13 +30,8 @@ What does this app do? First, you ask a question in a text field. This question 
 
 ## Examples
 
-1. **Пример запроса**:
-   - Вопрос: "Какая погода сегодня?"
-   - Ответ: "Сегодня солнечно и тепло."
-
-2. **Пример поиска**:
-   - Ввод: "погода"
-   - Результат: "Какая погода сегодня?"
+1. **Request example**:
+   - ![image](https://github.com/user-attachments/assets/25802fec-3d2a-4180-a524-a529390f5a90)
 
 ---
 
