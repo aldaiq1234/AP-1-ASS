@@ -1,7 +1,68 @@
-Hi! This is an application that I created to work with the Ollama model and keep a history of interactions. It can answer your questions using the locally running Ollama API, and also allows you to search through saved questions using the ChromaDB database. What does this app do? First, you ask a question in a text field. This question is passed to the Ollama API, which returns the answer to you. All your questions are saved in the database so that they can be found later. At any time, you can use the search function to remember what you asked earlier. ChromaDB is used to store the history. I made it so that each request is converted into a vector representation (embedding), and then saved along with the text. This allows you to quickly find queries similar to your search query. How does it work? I used Streamlit as the interface. This allows you to launch the application directly in the browser, and everything looks clear and simple.
-The Ollama API is responsible for processing your requests. You enter a text, it is passed to the model, and the model returns a response. This works locally, so it's important that the Ollama API is running on your computer.
-I used ChromaDB to store the data. Each question is saved in the database as text and its vector representation. So far, I'm using random numbers to create embedding vectors, but in the future, I can connect a real model for better search.
-When you search for something from the history, the application converts your query into a vector and compares it with the vectors of previously saved questions. As a result, you see the queries that are closest to your current search.
-How to use it?
-When you launch the application, you will have two text fields. In the first field, you enter your question. After pressing Enter, the question is sent to the Ollama API, and you receive an answer. The same question is automatically saved to the database so that you can find it later. In the second field, you can search by history. For example, if you have ever asked a question about the weather, you can enter the word "weather" and the app will show all the related questions you have asked.
-Right now, the application uses random numbers to create embedding vectors that are used for searching. This means that the search results may not always be accurate. In the future, you can connect a real model to create more meaningful vectors, which will make the search much better. It is also important that the Ollama API is running on your computer at http://localhost:11434 . Without this, the app will not be able to answer questions. It is a simple but functional application. It is suitable as a basis for more complex projects. If you want, you can improve it: connect a real model to create an embedding, make the interface more beautiful, or add new features. I hope it will be useful to you!
+Вот готовый `README.md`, соответствующий вашей структуре:
+
+```markdown
+# Ollama Chatbot with ChromaDB Integration
+
+Этот проект — это простой бот для общения, который использует модель Ollama для обработки запросов и ChromaDB для хранения истории запросов. Вы можете задавать вопросы, получать ответы и искать свои прошлые запросы.
+
+---
+
+## Installation
+
+1. Убедитесь, что у вас установлен Python версии 3.8 или выше.
+2. Установите зависимости. Для этого выполните команду:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Убедитесь, что API Ollama запущен локально на `http://localhost:11434`.
+
+---
+
+## Usage
+
+1. Запустите приложение командой:
+   ```bash
+   streamlit run src/app.py
+   ```
+2. Перейдите в браузер по адресу `http://localhost:8501`.
+3. Введите вопрос в первое текстовое поле и нажмите Enter, чтобы получить ответ от Ollama.
+4. Используйте второе текстовое поле для поиска по истории запросов. Введите ключевые слова, чтобы найти похожие вопросы.
+
+---
+
+## Examples
+
+1. **Пример запроса**:
+   - Вопрос: "Какая погода сегодня?"
+   - Ответ: "Сегодня солнечно и тепло."
+
+2. **Пример поиска**:
+   - Ввод: "погода"
+   - Результат: "Какая погода сегодня?"
+
+---
+
+## Project Repository Structure
+
+```
+Project Repository structure:
+  - README.md                # Описание проекта
+  - LICENSE                  # Лицензия
+  - requirements.txt         # Зависимости проекта
+  - src/                     # Исходный код
+      └── app.py             # Основное приложение Streamlit
+  - test/                    # Тесты
+      └── test_app.py        # Тестирование функциональности
+```
+
+---
+
+## Notes
+
+- **Хранение истории**: Все вопросы сохраняются в базе данных ChromaDB для дальнейшего поиска.
+- **Поиск**: Для поиска используется генерация векторных представлений текста (embedding). Сейчас используются случайные числа, но в будущем можно заменить на более продвинутую модель.
+
+Если у вас возникнут вопросы, не стесняйтесь спрашивать!
+```
+
+Этот файл готов к добавлению в ваш проект. Если нужно что-то уточнить или доработать, напишите!
