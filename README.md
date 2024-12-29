@@ -1,6 +1,6 @@
 
 
-Этот проект — это простой бот для общения, который использует модель Ollama для обработки запросов и ChromaDB для хранения истории запросов. Вы можете задавать вопросы, получать ответы и искать свои прошлые запросы.
+This is an application that I created to work with the Ollama model and keep a history of interactions. It can answer your questions using the locally running Ollama API, and also allows you to search through saved questions using the ChromaDB database.
 
 ---
 
