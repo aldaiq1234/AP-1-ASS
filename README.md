@@ -1,6 +1,7 @@
 
 
 This is an application that I created to work with the Ollama model and keep a history of interactions. It can answer your questions using the locally running Ollama API, and also allows you to search through saved questions using the ChromaDB database.
+What does this app do? First, you ask a question in a text field. This question is passed to the Ollama API, which returns the answer to you. All your questions are saved in the database so that they can be found later. At any time, you can use the search function to remember what you asked earlier.ChromaDB is used to store the history. I made it so that each request is converted into a vector representation (embedding), and then saved along with the text. This allows you to quickly find queries similar to your search query.
 
 ---
 
